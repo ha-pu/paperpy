@@ -64,6 +64,29 @@ SMTP_PORT='XXX'      # Port of the SMTP server from which the e-mail is sent
 RECEIPT_EMAIL='XXX'  # Email to which the summary is sent
 ```
 
+## System Prompt
+
+The file `system_prompt.txt` includes the system prompt used to generate the
+paper summaries. The script `modules/gpt_batch.py` automatically loads and
+adds it to the batch job. You can change the system prompt by editing the
+the text in the file. The default prompt is.
+
+> Your task is to read and understand complex academic texts and produce clear,
+> concise, and accurate summaries that synthesize the core contributions of each
+> document in a cohesive narrative. When summarizing, ensure you:\n\n
+> - Clearly state the main research question or objective.\n
+> - Integrate the theoretical framework and key concepts into a coherent explanation.\n
+> - Describe the methodology and data sources used, avoiding excessive technical detail.\n
+> - Concisely summarize the primary findings and conclusions, emphasizing their significance.\n
+> - Discuss any implications, limitations, or recommendations for future research in a balanced manner.\n\n
+> Adapt the style and tone to suit the nature of the document (e.g., empirical
+> study, review, or editorial) and avoid a rigid, formulaic presentation. Use
+> plain language, minimizing jargon to make the summary accessible to scholars
+> across related fields.\n
+> # Output Format\n\n
+> - Begin the response with an APA-style citation of the document.\n
+> - Format the entire response as HTML text.
+
 ## Usage
 
 * Setup: Ensure all dependencies are installed by running `pip install -r requirements.txt`.

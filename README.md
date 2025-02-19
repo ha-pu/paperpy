@@ -88,6 +88,8 @@ The default prompt is:
 > - Begin the response with an APA-style citation of the document.\n
 > - Format the entire response as HTML text.
 
+After importing the system prompt, `paper.py` removes unintended line breaks.
+
 ## Usage
 
 * Setup: Ensure all dependencies are installed by running `pip install -r requirements.txt`.

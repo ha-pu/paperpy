@@ -24,6 +24,10 @@ for pdf_file in pdf_files:
 with open('system_prompt.txt', 'r') as f:
     system_prompt = f.read()
 
+system_prompt = system_prompt.replace('\n', ' ')
+system_prompt = system_prompt.replace('\\n', '\n')
+system_prompt = system_prompt.replace('\n ', '\n')
+
 summaries = gpt_batch.execute_batch(system_prompt, texts)
 for i in range(len(summaries)):
     summaries[i] = remove_pattern.remove_pattern(summaries[i])

@@ -11,8 +11,9 @@ extraction, pattern removal, and email sending. The core functionality is
 controlled by a main script, `paper.py`, which integrates these modules to
 achieve the desired workflow.
 
-The workflow uses `rclone` to interact with Dropbox. This step can be
-substituted by manually moving PDFs between folders.
+The workflow uses `rclone` to interact with Dropbox and is devised as a cron
+job. This can be substituted by manually moving PDFs between folders and
+triggering the script.
 
 ## Folder Structure
 
@@ -32,19 +33,19 @@ working directory
 
 ## Key Components
 
-Scripts
+*Scripts*
 
 * **paper.py**: Main script that coordinates the entire workflow. It extracts text from PDFs, generates summaries using GPT, removes unwanted patterns, and sends the summaries via email.
 * **paperpy.sh**: Shell script to automate the execution of the main script and handle file movements using `rclone`.
 
-Modules
+*Modules*
 
 * **gpt_batch.py**: Handles batch processing for generating summaries using the GPT model.
 * **import_pdf.py**: Extracts text from PDF files.
 * **remove_pattern.py**: Removes specific patterns from the text.
 * **send_email.py**: Sends emails with the generated summaries.
 
-Configuration Files
+*Configuration Files*
 
 * **.gitignore**: Specifies files and directories to be ignored by Git.
 * **requirements.txt**: Lists the Python dependencies required for the project.
@@ -67,9 +68,9 @@ RECEIPT_EMAIL='XXX'  # Email to which the summary is sent
 ## System Prompt
 
 The file `system_prompt.txt` includes the system prompt used to generate the
-paper summaries. The script `modules/gpt_batch.py` automatically loads and
-adds it to the batch job. You can change the system prompt by editing the
-the text in the file. The default prompt is.
+paper summaries. The script `paper.py` automatically loads and adds it to the
+batch job. You can change the system prompt by editing the the text in the file.
+The default prompt is:
 
 > Your task is to read and understand complex academic texts and produce clear,
 > concise, and accurate summaries that synthesize the core contributions of each

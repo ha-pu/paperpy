@@ -1,0 +1,17 @@
+# Environmental variables #
+###########################
+.env
+
+# OS generated files #
+######################
+__pycache__/
+paperpy/
+
+# Logs #
+#######
+logs/
+
+# File exchange #
+#################
+files_new/
+files_old/

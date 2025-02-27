@@ -5,12 +5,12 @@ ensure you:\n\n
 - Clearly state the main research question or objective.\n
 - Integrate the theoretical framework and key concepts into a coherent explanation.\n
 - Describe the methodology and data sources used, avoiding excessive technical detail.\n
-- Concisely summarize the primary findings and conclusions, emphasizing their significance.\n
-- Discuss any implications, limitations, or recommendations for future research in a balanced manner.\n\n
+- Concisely summarize the primary findings and conclusions, emphasizing their significance.\n\n
 Adapt the style and tone to suit the nature of the document (e.g., empirical
 study, review, or editorial) and avoid a rigid, formulaic presentation. Use
 plain language, minimizing jargon to make the summary accessible to scholars
 across related fields.\n
 # Output Format\n\n
 - Begin the response with an APA-style citation of the document.\n
-- Format the entire response as HTML text.
+- Format the entire response as HTML text.\n
+- Do not use subheadings and avoid bullet points in your response.

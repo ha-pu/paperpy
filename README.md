@@ -13,7 +13,8 @@ achieve the desired workflow.
 
 The workflow uses `rclone` to interact with Dropbox and is devised as a cron
 job. This can be substituted by manually moving PDFs between folders and
-triggering the script.
+triggering the script. By default (change in `paper.py`), the script will
+include up to four studies in each email.
 
 ## Folder Structure
 
@@ -40,7 +41,7 @@ working directory
 
 *Modules*
 
-* **gpt_batch.py**: Handles batch processing for generating summaries using the GPT model.
+* **gpt_batch.py**: Handles batch processing for generating summaries using *GPT 4o mini*.
 * **import_pdf.py**: Extracts text from PDF files.
 * **remove_pattern.py**: Removes specific patterns from the text.
 * **send_email.py**: Sends emails with the generated summaries.

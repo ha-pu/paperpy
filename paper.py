@@ -11,7 +11,7 @@ load_dotenv()
 input_path = 'files_new'
 output_path = 'files_old'
 pdf_files = [os.path.join(input_path, file) for file in os.listdir(input_path) if file.endswith('.pdf')]
-pdf_files = pdf_files[:3]
+pdf_files = pdf_files[:4]
 
 texts = []
 for pdf_file in pdf_files:

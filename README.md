@@ -86,7 +86,7 @@ The default prompt is:
 > across related fields.\n
 > # Output Format\n\n
 > - Begin the response with an APA-style citation of the document.\n
-> - Do not use subheadings and avoid bullet points in your response.\n
+> - Use paragraphs and formatting but do not use subheadings or bullet points in your response.\n
 > - Format the entire response as HTML text.
 
 After importing the system prompt, `paper.py` removes unintended line breaks.

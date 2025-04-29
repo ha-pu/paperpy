@@ -40,7 +40,7 @@ def execute_batch(system, lst_user):
             'method': 'POST',
             'url': '/v1/chat/completions',
             'body': {
-                'model': 'gpt-4o-mini',
+                'model': 'gpt-4.1-nano',
                 'messages': [
                     {'role': 'system', 'content': system},
                     {'role': 'user', 'content': i},
